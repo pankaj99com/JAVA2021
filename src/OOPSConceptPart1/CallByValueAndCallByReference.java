@@ -10,6 +10,8 @@ int q;
 		int y=50;
 		int z=obj.testsum(x, y);//call by value or pass by value
 		//we are sending photocopy only and this will not affect the oroginal value of x and y
+		
+		obj.testsum(10, 20);
 		System.out.println(z);
 		
 		obj.p=80;
@@ -25,6 +27,7 @@ int q;
 		b=30;
 		int c=a=b;
 		return c;
+		
 	}
 	
 	public void swap(CallByValueAndCallByReference t){//t and obj are referring to objects p and q
@@ -34,4 +37,7 @@ int q;
 		t.q=temp;//80
 		
 	}
+	
+
+	
 }

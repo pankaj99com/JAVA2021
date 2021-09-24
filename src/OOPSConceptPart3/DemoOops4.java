@@ -34,8 +34,8 @@ class BA {
 
 	public void setPrice(int price) {
 		
-		boolean isAdmin=false;
-		//boolean  isAdmin=true;
+		//boolean isAdmin=false;
+		boolean  isAdmin=true;
 		if(!isAdmin){
 			System.out.println(" Not allowed to set price");
 		}else{

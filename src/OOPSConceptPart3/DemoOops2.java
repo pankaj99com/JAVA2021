@@ -39,8 +39,8 @@ public class DemoOops2 {
 		p4.walk();
 		p4.walk(2000);
 		System.out.println("Total number of object created :" + Person2.count);
-		Tester t2=(Tester) new Person2("PankajKumar",34);
-		t2.doWork();
+		//Tester t2=(Tester) new Person2("PankajKumar",34);
+		//t2.doWork();
 		
 		
 

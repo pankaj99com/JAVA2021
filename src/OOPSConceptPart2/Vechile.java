@@ -1,9 +1,9 @@
 package OOPSConceptPart2;
 
-public class Vechile {
+public class Vechile {//parent class
 
 	public void engine(){
 		
-		System.out.println("vechile -engine method");
+		System.out.println("Parent vechile -engine method");
 	}
 }

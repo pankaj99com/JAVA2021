@@ -3,7 +3,7 @@ package OOPSConceptPart3;
 public class DemoOops1 {
 
 	public static void main(String[] args) {
-		Person1 p1=new Person1("Pankaj",34);
+		Person1 p1=new Person1("Pankaj",34);//parameterized constructor
 		
 		
 		
@@ -24,20 +24,28 @@ public class DemoOops1 {
 	}
 
 }
+
+
+
+
+
 class Person1{
 	String name;
 	int age;
-	static int count;
+	static int count=0;
 	
 	
    public Person1() {
+	   
 	   count++;
 		System.out.println("Creating an object");
 	}
+   
+   
     public Person1(String name, int age) {
     	
     	this();//if we want to call another constructer then we can use this() keyword
-    	this.name=name;//this is also used for avoid instance variable hiding--if i want to assign class varaiable thenwe can use this
+    	this.name=name;//this is also used for avoid instance variable hiding--if i want to assign class varaiable then we can use this
     	this.age=age;
 //		name=name;
 //		age=age;

@@ -1,6 +1,6 @@
 package OOPSConceptPart2;
 
-public class Car extends Vechile {
+public class Car extends Vechile {//car is the child which is taking the property of the parent class Veihcle
 
 	public void start(){
 		System.out.println("car start");

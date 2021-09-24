@@ -7,6 +7,7 @@ public class BMW extends Car {//has-a relationship
 		System.out.println("BMW start method");
 	}
 	
+	
 	public void threatSafety(){
 		System.out.println("BMW Threat safety method");
 	}

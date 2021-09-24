@@ -41,6 +41,7 @@ public class StringConcatination {
 		System.out.println(s.substring(0, 4));// hell
 		String s1 = "Pankaj";
 		
+		
 		System.out.println(s.toUpperCase().charAt(2));
 		//System.out.println(s);
 		System.out.println(a + b);// 300
