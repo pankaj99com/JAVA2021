@@ -9,7 +9,7 @@ public class EncapsulationwithGettersAndSetters {
 		System.out.println("Phone Model is :" + m.model);
 		// m.price=20000;//in order to access the price we need setters and
 		// getters method
-		m.setPrice(23930);
+		m.setPrice(2393000);
 	}
 
 }
@@ -22,7 +22,7 @@ class Mobile {
 
 	public void setPrice(int price) {
 		boolean isAdmin = true;
-		if (!isAdmin) {
+		if (isAdmin) {
 			System.out.println("OOps!! you are not admin ");
 
 		} else {

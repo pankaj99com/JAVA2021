@@ -7,7 +7,7 @@ public class PriorityQueueDemo1 {
 
 	public static void main(String[] args) {
 		
-		PriorityQueue<Integer> pq=new PriorityQueue<>(Comparator.reverseOrder());//using comparator we are changig the priority
+		PriorityQueue<Integer> pq=new PriorityQueue<>(Comparator.reverseOrder());//using comparator we are changing the priority
 		pq.offer(40);
 		pq.offer(8);
 		pq.offer(5);

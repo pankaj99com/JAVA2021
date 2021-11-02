@@ -25,10 +25,6 @@ public class DemoOops1 {
 
 }
 
-
-
-
-
 class Person1{
 	String name;
 	int age;

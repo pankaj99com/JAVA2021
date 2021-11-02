@@ -10,7 +10,9 @@ public class DemoOops {
 		
 		System.out.println(p1.name+"  "+p1.age);
 		
+		
 		p1.eat();
+	
 		p1.walk();
 		Person p2=new Person();
 		p2.name="Sandeep";

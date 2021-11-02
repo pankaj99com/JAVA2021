@@ -1,0 +1,20 @@
+Stack Class
+
+The Stack is the subclass of the Vector class. It’s having the following features:
+
+    Stack implements the Vector data structure with the (LIFO)last-in-first-out.
+    Stack contains all of the methods of the Vector class.
+    Stack also provides its methods like boolean push(), boolean peek(), boolean push(object o), which defines its features.
+
+
+D:\Pankaj-QA\Java2021\src\OOPSConceptPart3>javap -p java.util.Stack
+Compiled from "Stack.java"
+public class java.util.Stack<E> extends java.util.Vector<E> {
+  private static final long serialVersionUID;
+  public java.util.Stack();
+  public E push(E);
+  public synchronized E pop();
+  public synchronized E peek();
+  public boolean empty();
+  public synchronized int search(java.lang.Object);
+}

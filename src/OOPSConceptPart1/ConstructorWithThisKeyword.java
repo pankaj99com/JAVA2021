@@ -17,6 +17,7 @@ public class ConstructorWithThisKeyword {
 		ConstructorWithThisKeyword Obj=new ConstructorWithThisKeyword("Pankaj",30);
 		System.out.println(Obj.name);// if we comment the this block then it will null value because class variablesa are not initialized
 		System.out.println(Obj.age);
+		
 	}
 
 }

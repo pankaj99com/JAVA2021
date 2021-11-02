@@ -18,10 +18,13 @@ public class B extends A {
 		super(i, j);// calling parent class constructor
 
 	}
-
+//	void test() {
+//		System.out.println("test method ");  Output:Compile Time Error
+//	}
 	public static void main(String args[]) {
 		B obj = new B();
 		B obj1 = new B(10);
 		B obj2 = new B(10, 20);
+		
 	}
 }

@@ -16,9 +16,8 @@ public class LinkedHashSetDemo {
 		set.add(23);
 		set.add(44);
 		set.add(5);
-		set.add(23);//Duplicate elements cannot be inserted inside the sets
-		set.add(23);
-		set.add(23);
+		System.out.println(set.add(23));//Duplicate elements cannot be inserted inside the sets
+		
 		
 		System.out.println(set);
 		

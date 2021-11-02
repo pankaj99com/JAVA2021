@@ -10,6 +10,7 @@ public class ArrayClassDemo {
 		
 	int index=Arrays.binarySearch(numbers,8);//works in case of sorted array
 	
+	
 	System.out.println(index);
 	int numbers1[]={56,2,33,4,5,23,7,8};
 	Arrays.sort(numbers1);

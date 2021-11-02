@@ -7,6 +7,10 @@ public class Test extends Shape{
 		Shape s=new Test();
 		s.drawing();
 		s.fill();
+		s.color="red";
+		System.out.println(s.color);
+		Shape.size=70;
+System.out.println(Shape.size);
 
 	}
 

@@ -3,7 +3,7 @@ package OOPSConceptPart2;
 public interface USBank {
 
 	int min_bal=1000;
-	public void credit();//waste water,family man,don't put nails
+	public  void credit();//waste water,family man,don't put nails
 	public void debit();
 	public void transfermoney();
 //	public void sum() {  we cannot define any other methods with body inside Interface

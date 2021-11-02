@@ -10,12 +10,12 @@ public class ExceptionHandling {
 		//
 		// System.out.println(i);
 		
-		main(10,20);
+		main(50,20);
 		
 
-		// Caught Exception
+		// 1.Caught Exception
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e1) {
 			System.out.println("This is going to give InterruptedException");
 			e1.printStackTrace();
@@ -24,7 +24,7 @@ public class ExceptionHandling {
 		ExceptionHandling obj=new  ExceptionHandling();
 		System.out.println(obj);
 		// ExceptionHandling obj=new ExceptionHandling();
-		// obj=null;
+		//obj=null;
 		System.out.println(obj.a);// java.lang.NullPointerException
 
 		try {

@@ -3,8 +3,14 @@ package OOPSConceptPart1;
 public class StringManipulation {
 
 	public static void main(String[] args) {
-		MethodOverloading obj = new MethodOverloading();
-		obj.sum(10, 20, 30);
+		
+		String fruit="50";
+		int a=77;
+		System.out.println(a);
+		
+		
+		System.out.println("*****************");
+		
 		String str = "India is a great countryr";
 		String str1 = "INDIA is a great countryr";
 		int len = str.length();
@@ -12,6 +18,7 @@ public class StringManipulation {
 
 		char ch = str.charAt(11);
 		System.out.println(ch);
+		
 
 		int index = str.indexOf('c');
 		System.out.println(index);
@@ -57,6 +64,17 @@ public class StringManipulation {
 		// concatinate
 		String s4 = "finding";
 		System.out.println(s4.concat("s"));
+		String str5="HELLO";
+		String str6="hello";
+		System.out.println(str.compareTo(str1));
+		System.out.println(str6.compareTo(str5));
+		System.out.println(str5.equals(str6));
+		System.out.println(str5.equalsIgnoreCase(str6));
+		//String example = "This is the "String" class";
+		String example1 = "This is the \"String\" class";
+		String example = "Hello! ";
+		example.concat(example1);//Strings are immutable  in nature it means when we cannot update the value of the String
+		System.out.println(example);
 	}
 
 }

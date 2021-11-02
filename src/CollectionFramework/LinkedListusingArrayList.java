@@ -15,6 +15,8 @@ public class LinkedListusingArrayList {
 		arr.add("pankaj");
 		arr.add('A');
 		arr.add('p');
+		
+		
 
 		System.out.println(arr);
 		System.out.println(arr.get(3));

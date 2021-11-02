@@ -1,8 +1,8 @@
 package OOPSConceptPart2;
 
 public abstract class Shape {
-	int color;
-
+	String color;
+static  int size=20;
 	abstract void drawing();
 
 	public void fill(){

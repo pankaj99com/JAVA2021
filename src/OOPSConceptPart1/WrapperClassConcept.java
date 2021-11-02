@@ -33,9 +33,9 @@ public class WrapperClassConcept {
 	     String g="120K";
 	     
 	     System.out.println(g.substring(0, 3));
-	     String str1=g.substring(0, 3);
-	     int ggg=Integer.parseInt(str1);
-	     System.out.println(ggg);
+	     String str1=g.substring(0, 3);//120
+	     int ggg=Integer.parseInt(str1);//120 int
+	     System.out.println(ggg);//120
 	     int gg=Integer.parseInt(g);//it will throw number format exception
 	     System.out.println(gg);
 	     

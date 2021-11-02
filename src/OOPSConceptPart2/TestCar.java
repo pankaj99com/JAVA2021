@@ -23,16 +23,17 @@ public class TestCar {
 		c.start();
 		c.stop();
 		c.refuel();
+		c.engine();
 		//c.threatSafety(); -In java parent class object cannot access child class method
 		
 		
-		
+		System.out.println("**********************");
 		//3. parent class ref and child class object
 		Car c1=new BMW();
 		/*Child class object can be referred by parent class 
 		reference variable is call dynamic or run time polymorphism*/
 		//This is called topcasting
-		c1.start();//child class method wiill be called.
+		c1.start();//child class method will be called.
 		c1.stop();
 		c1.refuel();
 		c1.engine();

@@ -6,7 +6,7 @@ import java.util.Queue;
 public class linkedListQueueDemo {
 
 	public static void main(String[] args) {
-		Queue<Integer> queue = new LinkedList();
+		Queue<Integer> queue = new LinkedList<Integer>();
 
 		queue.offer(10);
 		queue.offer(34);

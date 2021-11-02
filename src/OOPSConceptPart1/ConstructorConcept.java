@@ -6,6 +6,7 @@ public class ConstructorConcept {
 		System.out.println("Default constructor");
 	}
 	public ConstructorConcept(int a){
+		
 		System.out.println("single param constructor");//Constructor overloading
 	}
 

@@ -14,7 +14,7 @@ public class ArrayConcepts {
 		i[1]=20;
 		i[2]=30;
 		i[3]=40;
-		
+		//int j[]= {4,6,56,55,6};//also valid
 		
 		System.out.println(i[3]);//40
 

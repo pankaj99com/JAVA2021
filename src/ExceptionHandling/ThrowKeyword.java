@@ -20,19 +20,21 @@ public class ThrowKeyword {
 		// will throw error because no one is catching the exception not even
 		// JVM
 		System.out.println("end");
+	
 		
-		String Exe_flag="N";
-		if(Exe_flag.equals("N")){
-			try {
-				throw new Exception("Execution flag is set to No ");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			System.out.println("Exception is handled");
-		}
+//		String Exe_flag="N";
+//		if(Exe_flag.equals("N")){
+//			try {
+//				throw new Exception("Execution flag is set to No ");
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//			System.out.println("Exception is handled");
+//		}
 
 	}
 
 }
+

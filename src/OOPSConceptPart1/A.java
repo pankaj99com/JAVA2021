@@ -12,5 +12,8 @@ public class A {
 	public A(int i,int j){
 		System.out.println("Parent class value of i is :"+i);
 		System.out.println("Parent class value of j is :"+j);
-	}
+		
+			
+		}
+	
 }

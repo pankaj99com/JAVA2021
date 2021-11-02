@@ -1,0 +1,79 @@
+Why need collection?
+
+There are four ways in Java to store values by JVM.
+1:Variable approach
+
+If we need to handle one, two or three or fewer numbers of values then the variable approach is a good bit 
+if need to deal with so many objects like 5000 then variable approach have some drawback:
+
+    The limitation of a variable is that it can store only one value at a time.
+    Readability and reusability of the code will be down.
+    JVM will take more time for the execution.
+
+2: Using a class object approach
+
+Using a class object, we can store multiple “fixed” numbers of values of different types. For example, 
+suppose we are creating a class named Person.
+1
+2
+3
+4
+	
+class Person{
+String Name ;
+int age ;
+}
+
+If you create the object of Person class like this
+1
+	
+Person p1=new Person(); // So can you think how many values can store in this person object?
+
+The answer is only two i.e name and age. but if you will want to store the third value, it will not possible.
+3: Using an array object approach
+
+Array improved the readability of code, by using a single variable for a huge number of values 
+but there are various problems and limitations with the array.
+
+
+Student[] st=new Student[5000];
+
+    Array allow to store only homogeneous data type.
+    Array is static and fixed in length size.
+    Array concept help with standard data structure, but when need to deal with the sorting of objects, 
+    search for a specific item, etc.
+
+4: Collection Object:
+
+By using a collection object, we can store the same or different data without any size limitation.
+What is a Framework in Java?
+
+A framework is a set of several classes and interfaces which provide a readymade architecture.
+What is a Collections Framework?
+
+A collection framework provides a unified readymade architecture for storing and manipulating a group of objects.
+ All collections frameworks contain the following:
+
+    Interfaces: Interfaces generally forms a hierarchy and allow collections object to be manipulated
+     independently of the details of their representation.
+    Implementations: Provides a concrete representation by data structure and implementation of  collections interfaces.
+    Algorithms: The methods that perform useful operations, such as searching and sorting, on objects that implement
+     collection interfaces.
+
+Benefits of Collections Framework
+
+Collections Framework provides lots of benefits:
+
+    Reduces programming effort: The Collections framework provides useful data structures and algorithms 
+    so that developers can concentrate on programming logic only.
+    Increases program performance and quality: Collections Framework provides high-quality 
+    data structures and algorithms implementations for good performance. 
+    These collections interface APIs are interchangeable so that easily tuned by switching collection implementations.
+    Allows interoperability among unrelated APIs: 
+    These data structures are interchangeable so that choose data structure and algorithms according to requirement.
+    Reduces effort to learn and to use new APIs: Most of APIs are common for collections framework because of the inherent 
+    Collection interface. only some APIs need to remember that are specific to the data structure.
+    Reduces effort to design new APIs: If new data structure and algorithm change create polymorphism of API 
+    and change the internal algorithm of APIs.
+    Fosters software reuse: If new data structure added use standard APIs so that easy to learn for developers.
+https://facingissuesonit.com/2019/10/15/java-collection-framework-introduction/

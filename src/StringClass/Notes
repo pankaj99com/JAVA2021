@@ -1,0 +1,68 @@
+String class:
+
+String str=new String("Pankaj");
+Str.concat("kumar");//GC will be called since there no object ref
+String sss=Str.concat("kumar");
+System.out.println(str);//Pankaj will be printed
+
+System.out.println(sss);//Pankajkumar
+
+once we create object of String class we cannot perform any changes in the existing object.
+If we try to perform any changes with those changes a new object will be created .
+This behaviour is nothing but Immutability of String Objects.
+
+String buffer:
+
+StringBuffer sb=new New StringBuffer("Pankaj");
+
+sb.append("kumar");
+System.out.println(sb);//PankajKumar
+
+Once we created a StringBuffer object we can perform any changes in the existing object.
+The behaviour is nothing but mutability of the String Buffer
+
+
+String str1=new String("Pankaj");
+String str2=new String("Pankaj");
+System.out.println(str1==str2);//false
+
+System.out.println(str1.equals(str2));//true
+
+IN String class .equals() method is a overridden method for content comparison
+
+
+String s=new String("Pankaj");//2 object create hota hai:-->1.heap 2.String constant pool 
+s--->heap wale object ko point karta hai
+
+String s="Pankaj";//string constant pool mein ye object rehta hai aur s point karta hai scp object ko.
+
+GC is not applicable for SCP.
+
+String str1=new String("Pankaj");//heap+scp--->scp--mein already preset hai to same object utilize hoga(2)
+String str2=new String("Pankaj");//heap+scp(str2--->heap,str2--->already existing object from scp)
+String str3="Pankaj";//scp-->str3--->already existing object from scp)
+String str4="Pankaj";//scp-->str2--->already existing object from scp)
+
+
+
+String s1=new String("Sandeep");2--objects
+
+s1.concate("PV");//sandeeppv-gc  SCP- pv
+
+s1.concate("ABC");SandeepABC--gc  SCP--ABC
+
+String s2=new s1.concate("Vishwa");//SandeepVishwa--->ref present hai(s2)   SCP--viswa
+
+
+String s1="pankajk";//scp
+String s2="pankaj1";// new object in scp
+String s3="pankaj";
+
+
+
+
+
+
+ 
+
+

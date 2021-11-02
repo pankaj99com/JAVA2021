@@ -20,7 +20,6 @@ public class AbstractionClassDemo {
 class Audi extends Car {
 	String name;
 
-	@Override
 	void start() {
 		System.out.println("AUDI is starting");
 
@@ -37,13 +36,18 @@ class Audi extends Car {
 abstract class BMW extends Car {
 	// BMW b=new BMW();//we cannot create object this class but we can create
 	// object of child classes
+	abstract void zero();
+
+	void one() {
+		System.out.println("one");
+	}
 
 }
 
 abstract class Car {// we cannot create object this class but we can create
 					// object of child classes
 
-	int price;
+	int price = 1000;
 
 	abstract void start();
 

@@ -1,5 +1,6 @@
 package CollectionFramework;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -8,6 +9,10 @@ public class TreeMapDemo {
 
 	public static void main(String[] args) {
 		Map<String,Integer> numbers=new TreeMap<>();
+//		 public java.util.TreeMap();
+//		  public java.util.TreeMap(java.util.Comparator<? super K>);
+//		  public java.util.TreeMap(java.util.Map<? extends K, ? extends V>);
+//		  public java.util.TreeMap(java.util.SortedMap<K, ? extends V>);
 		//1.Keys will be unique values can be same
 		//2.Keys will be in sorted order in case of TreeMap(Sorting the alaphabets)
 		numbers.put("One", 1);
@@ -29,9 +34,9 @@ public class TreeMapDemo {
 		System.out.println(numbers);
 		
 		for(Map.Entry<String, Integer> e:numbers.entrySet()){
-			System.out.println(e);
-			System.out.println(e.getKey());
-			System.out.println(e.getValue());
+			
+			System.out.println(e.getKey()+"="+e.getValue());
+			
 		}
         for(String key:numbers.keySet()){
         	System.out.println(key);

@@ -1,0 +1,93 @@
+List Interface
+
+List interface is the subtype/child interface of the Collection interface. 
+It stores objects/elements in list type data structure in ordered form 
+and also allowed duplicate values.
+
+Implementation classes for List interface are ArrayList, LinkedList, Vector, and Stack.
+
+For Example: To instantiate List Interface with Implementation classes follow:
+
+
+List  list1= new ArrayList();  
+List  list2 = new LinkedList();  
+List  list3 = new Vector();  
+List  list4 = new Stack();
+
+D:\Pankaj-QA\Java2021\src\OOPSConceptPart3>javap  java.util.List
+Compiled from "List.java"
+public interface java.util.List<E> extends java.util.Collection<E> {
+  public abstract int size();
+  public abstract boolean isEmpty();
+  public abstract boolean contains(java.lang.Object);
+  public abstract java.util.Iterator<E> iterator();
+  public abstract java.lang.Object[] toArray();
+  public abstract <T> T[] toArray(T[]);
+  public abstract boolean add(E);
+  public abstract boolean remove(java.lang.Object);
+  public abstract boolean containsAll(java.util.Collection<?>);
+  public abstract boolean addAll(java.util.Collection<? extends E>);
+  public abstract boolean addAll(int, java.util.Collection<? extends E>);
+  public abstract boolean removeAll(java.util.Collection<?>);
+  public abstract boolean retainAll(java.util.Collection<?>);
+  public void replaceAll(java.util.function.UnaryOperator<E>);
+  public void sort(java.util.Comparator<? super E>);
+  public abstract void clear();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract E get(int);
+  public abstract E set(int, E);
+  public abstract void add(int, E);
+  public abstract E remove(int);
+  public abstract int indexOf(java.lang.Object);
+  public abstract int lastIndexOf(java.lang.Object);
+  public abstract java.util.ListIterator<E> listIterator();
+  public abstract java.util.ListIterator<E> listIterator(int);
+  public abstract java.util.List<E> subList(int, int);
+  public java.util.Spliterator<E> spliterator();
+}
+
+
+D:\Pankaj-QA\Java2021\src\OOPSConceptPart3>javap  java.util.ArrayList
+Compiled from "ArrayList.java"
+public class java.util.ArrayList<E> extends java.util.AbstractList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
+  transient java.lang.Object[] elementData;
+  public java.util.ArrayList(int);
+  public java.util.ArrayList();
+  public java.util.ArrayList(java.util.Collection<? extends E>);
+  public void trimToSize();
+  public void ensureCapacity(int);
+  public int size();
+  public boolean isEmpty();
+  public boolean contains(java.lang.Object);
+  public int indexOf(java.lang.Object);
+  public int lastIndexOf(java.lang.Object);
+  public java.lang.Object clone();
+  public java.lang.Object[] toArray();
+  public <T> T[] toArray(T[]);
+  E elementData(int);
+  public E get(int);
+  public E set(int, E);
+  public boolean add(E);
+  public void add(int, E);
+  public E remove(int);
+  public boolean remove(java.lang.Object);
+  public void clear();
+  public boolean addAll(java.util.Collection<? extends E>);
+  public boolean addAll(int, java.util.Collection<? extends E>);
+  protected void removeRange(int, int);
+  public boolean removeAll(java.util.Collection<?>);
+  public boolean retainAll(java.util.Collection<?>);
+  public java.util.ListIterator<E> listIterator(int);
+  public java.util.ListIterator<E> listIterator();
+  public java.util.Iterator<E> iterator();
+  public java.util.List<E> subList(int, int);
+  static void subListRangeCheck(int, int, int);
+  public void forEach(java.util.function.Consumer<? super E>);
+  public java.util.Spliterator<E> spliterator();
+  public boolean removeIf(java.util.function.Predicate<? super E>);
+  public void replaceAll(java.util.function.UnaryOperator<E>);
+  public void sort(java.util.Comparator<? super E>);
+  static int access$000(java.util.ArrayList);
+  static {};
+}
